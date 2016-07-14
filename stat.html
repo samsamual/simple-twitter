@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Twitter</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/typography.css" rel="stylesheet">
+
+  </head>
+  <body>
+  	<div class="hidden-xs-down col-sm-2 col-md-2 col-xl-2 col-lg-2 left-nav">
+  		<div class="inner">
+  			<div class="container">
+	  			<div class="profile-pic">
+	  				<img src="img/Anna_Profile.png">
+	  				<a class="hidden-sm-down" href="#">Logic Boys</a>
+	  			</div>
+	  			<hr />
+	  			<div class="col-md-12 col-lg-6 fol">
+	  				<h1>184</h1>
+	  				<a href="#">Following</a>
+	  			</div>
+	  			<div class="col-md-12 col-lg-6 fol">
+	  				<h1>184</h1>
+	  				<a href="#">Follower</a>
+	  			</div>
+	  		</div>
+	  		<ul>
+	  			<li><a href="index.html"><i class="fa fa-home"></i> <span class="hidden-sm-down">Home</span></a></li>
+	  			<li><a href="mention.html"><i class="fa fa-envelope"></i> <span class="hidden-sm-down">Connect</span></a></li>
+	  			<li><a href="discover.html"><i class="fa fa-compass"></i> <span class="hidden-sm-down">Discover</span></a></li>
+	  			<li><a href="profile.html"><i class="fa fa-user"></i> <span class="hidden-sm-down">Profile</span></a></li>
+	  			<li class="active"><a href="stat.html"><i class="fa fa-area-chart"></i> <span class="hidden-sm-down">Statistic</span></a></li>
+	  		</ul>
+  		</div>
+  	</div>
+  	<div class="nav-top col-xs-12 col-sm-10 col-md-10 col-xl-10 col-lg-10 pull-right">
+  		<div class="container">
+  			<div class="navbar">
+  				<a href="#" class="hidden-xs-down navbar-brand"><i class="fa fa-twitter"></i></a>
+  				<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#mainNav">
+  					<i class="fa fa-twitter"></i>
+  				</button>
+  				<button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#userNav">
+  					<i class="fa fa-user"></i>
+  				</button>
+  				<ul class="collapse navbar-toggleable-xs hidden-sm-up" id="mainNav">
+  					<li class="active"><a href="index.html"><i class="fa fa-home"></i> <span>Home</span></a></li>
+		  			<li><a href="mention.html"><i class="fa fa-envelope"></i> <span>Connect</span></a></li>
+		  			<li><a href="discover.html"><i class="fa fa-compass"></i> <span>Discover</span></a></li>
+		  			<li><a href="profile.html"><i class="fa fa-user"></i> <span>Profile</span></a></li>
+		  			<li class="active"><a href="stat.html"><i class="fa fa-area-chart"></i> <span>Statistic</span></a></li>
+  				</ul>
+	  			<ul class="collapse navbar-toggleable-xs nav navbar-nav pull-sm-right" id="userNav">
+	  				<li class="nav-item"><a href="#" role="button" data-toggle="modal" data-target="#tweet-dialog"><i class="fa fa-pencil" data-toggle="tooltip" data-placement="bottom" title="Tweet"></i> <span class="hidden-sm-up">Tweet</span></a></li>
+	  				<li class="nav-item"><a href="mention.html"><i data-toggle="tooltip" data-placement="bottom" title="Mention" class="fa fa-envelope"></i> <span class="hidden-sm-up">Mention</span></a></li>
+	  				<li class="nav-item"><a href="#" role="button" data-toggle="modal" data-target="#search-dialog"><i data-toggle="tooltip" data-placement="bottom" title="Search" class="fa fa-search"></i> <span class="hidden-sm-up">Search</span></a></li>
+	  				<li class="nav-item"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Setting"><i class="fa fa-gear"></i> <span class="hidden-sm-up">Setting</span></a></li>
+	  			</ul>
+	  		</div>
+  		</div>
+  	</div>
+  	<section id="main" class="col-xs-12 col-sm-offset-2 col-sm-10">
+  		<div class="col-xs-12 col-sm-7 col-lg-9 wrapper">
+  			<div class="row second-nav">
+  				<ul>
+		  			<li class="active"><a href="#">Dashboard</a></li>
+		  			<li><a href="#">Real Time</a></li>
+		  			<li><a href="#">Users</a></li>
+		  		</ul>
+  			</div>
+  			<div class="container row">
+  				<div class="graph">
+  					<h1>View of Your Tweet</h1>
+  					<div class="pull-right hidden-md-down" style="display: inline-block;">
+  						<a href="#" class="active">Week</a>
+  						<a href="#">Month</a>
+  						<a href="#">Year</a>
+  					</div>
+  					<hr />
+  					<div id="graph_area" style="width:100%; height:300px;"></div>
+  				</div>
+  				<div class="user-stat">
+  					<div class="col-xs-6 col-md-3">
+  						<h1>2453</h1>
+  						<span>Tweets</span>
+  					</div>
+  					<div class="col-xs-6 col-md-3">
+  						<h1>23</h1>
+  						<span>Favourites</span>
+  					</div>
+  					<div class="col-xs-6 col-md-3">
+  						<h1>2453</h1>
+  						<span>Followers</span>
+  					</div>
+  					<div class="col-xs-6 col-md-3">
+  						<h1>2453</h1>
+  						<span>Following</span>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="col-xs-12 col-sm-5 col-lg-3">
+  			<div class="container" id="latest-activity">
+  				<div id="latest-activity-header">
+	  				<h1>Latest Activity</h1>
+	  				<a href="#" class="hidden-sm-down pull-right"><i class="fa fa-refresh"></i></a>
+	  			</div>
+	  			<hr />
+	  			<ul class="timeline">
+	  				<li>
+	  					<i></i>
+	  					<span class="time-stamp">Just Now</span>
+	  					<p>
+	  						<a href="#" class="item">Red King Quote</a> has been favourited by <a href="#" class="user">Kushina Anna</a>
+	  					</p>
+	  				</li>
+	  				<li>
+	  					<i></i>
+	  					<span class="time-stamp">5 Min Ago</span>
+	  					<p>
+	  						<a href="#" class="item">Rebellion Note</a> has been favourited by <a href="#" class="user">Munakata Reisi</a>
+	  					</p>
+	  				</li>
+	  				<li>
+	  					<i></i>
+	  					<span class="time-stamp">1 Hour ago</span>
+	  					<p>
+	  						<a href="#" class="item">My Note</a> has been favourited by <a href="#" class="user">Mikoto Suoh</a>
+	  					</p>
+	  				</li>
+	  				<li>
+	  					<i></i>
+	  					<span class="time-stamp">1 Day ago</span>
+	  					<p>
+	  						<a href="#" class="item">Mikoto Suoah</a> just followed you
+	  					</p>
+	  				</li>
+	  			</ul>
+  			</div>
+  		</div>
+  	</section>
+    <div id="tweet-dialog" class="modal fade" role="dialog">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+	    			<button type="button" class="close" data-dismiss="modal">
+	    				&times;
+	    			</button>
+	    			<h4 class="modal-title">Tweet Something</h4>
+    			</div>
+    			<form>
+		    			<div class="modal-body">
+		   				<textarea placeholder="Compose your tweet...." class="form-control"></textarea>
+		   				<span>150 character remaining</span>
+		   			</div>
+		   			<div class="modal-footer">
+		   				<button class="btn btn-secondary-outline pull-left" data-dismiss="modal">Close</button>
+		   				<input type="submit" class="btn btn-primary pull-right" value="Tweet"/>
+		    		</div>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+    <div id="search-dialog" class="modal fade" role="dialog">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+	    			<button type="button" class="close" data-dismiss="modal">
+	    				&times;
+	    			</button>
+	    			<h4 class="modal-title">Search</h4>
+    			</div>
+    			<div class="modal-body">
+    				<form class="input-group">
+    					<span class="input-group-addon"><i class="fa fa-search"></i></span>
+    					<input type="text" class="form-control" placeholder="Search">
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/moris/raphael-min.js"></script>
+	<script src="js/moris/morris.min.js"></script>
+	<script src="js/moris/example.js"></script>
+  	<script>
+  		$(function( ){
+  			$( "[data-toggle='tooltip']").tooltip( );
+  		});
+  	</script>
+  </body>
+</html>

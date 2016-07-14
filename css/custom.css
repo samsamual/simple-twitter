@@ -1,0 +1,521 @@
+hr{
+	border-top: solid 1px rgba(0,0,0, .25);
+	margin-bottom: 0px;
+}
+a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+a{
+	color: inherit;
+}
+textarea{
+	resize: none;
+	min-height: 6rem;
+}
+.btn{
+	display: block;
+	font-size: inherit;
+	font-family: inherit;
+}
+.btn-primary{
+	background-color: rgb(81, 165, 229);
+	border-color: rgb(81, 165, 229);
+}
+.btn-primary:hover{
+	background-color: rgb(81, 165, 229);
+	border-color: rgb(81, 165, 229);
+}
+.left-nav{
+	font-family: "Aller Light";
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	background-color: #213246;
+	color: #4b5d71;
+	padding: 15px 0px;
+}
+.inner{
+	width: 115%;
+	height: 100%;
+	overflow-y: scroll;
+}
+.left-nav img{
+	border-radius: 50px;
+	max-width: 20%;
+	margin-right: 3%;
+	border: solid 3px #4b5d71;
+}
+.left-nav img:hover{
+	border-style: none;
+}
+.profile-pic a{
+	line-height: 20%;
+	display: inline-block;
+	font-size: .8rem;
+	vertical-align: middle;
+}
+.left-nav h1{
+	font-size: 1rem;
+	color: white;
+	text-align: center;
+}
+.left-nav .fol a{
+	font-size: .8rem;
+	display: block;
+	text-align: center;
+}
+.left-nav .fol{
+	padding: 15px 0px;
+	border:  1px rgba(0,0,0, .25);
+	border-bottom-style: solid;
+}
+#mainNav, .left-nav ul{
+	list-style: inside none;
+	padding-left: 0px;
+}
+#mainNav li, .left-nav ul li{
+	display: block;
+	width: 100%;
+	padding: 15px 0px;
+	padding-left: 15px;
+	font-size: 1rem;
+}
+.left-nav ul li:hover, .left-nav ul li.active{
+	color: white;
+	background-color: #4c9bd6;
+}
+#mainNav li span, .left-nav ul li span{
+	display: inline-block;
+	margin-left: 15px;
+}
+.nav-top{
+	background-color: #51a5e5;
+	color:white;
+	padding: 15px 0px;
+}
+#mainNav{
+	color: white;
+}
+.nav-top .navbar-brand{
+	padding: 0px;
+	margin: 0px;
+}
+.nav-top ul{
+	margin-bottom: 0px;
+}
+.nav-top ul li{
+	margin-right: 15px;
+	color: #37709d;
+}
+#main{
+	background-color: #f5f6f8;
+	font-family: "Aller";
+}
+#main hr{
+	border-top: solid 1px rgba(0,0,0, .1);
+	margin-top: 0px;
+}
+#main > div{
+	padding: 0px;
+}
+#main .wrapper{
+	border-right: solid 1px rgba(0,0,0,.1);
+}
+.second-nav{
+	margin-right: 0px;
+	border-bottom: solid 1px rgba(0,0,0,.1);
+}
+.second-nav ul{
+	padding: 0px;
+	list-style: inside none;
+}
+.second-nav ul li{
+	padding: 15px 20px;
+	font-family: "Aller Light";
+	color: #c2c2c2;
+}
+.second-nav ul li.active, .second-nav ul li:hover{
+	font-family: "Aller Bold";
+	border-bottom: 3px solid #51a5e5;
+	color: #919aa3;
+}
+#main .wrapper .container > div, #main .wrapper .container > form{
+	margin: 15px;
+	padding: 20px 15px;
+	border-radius: 3px;
+}
+.tweet-form, .graph, .user-stat{
+	background-color: white;
+}
+.tweet-form h1{
+	display: block;
+	margin: 0px;
+	margin-bottom: 15px;
+	font-family: "Aller";
+	font-size: 1rem;
+	color: #c2c2c2;
+}
+input:focus, textarea:focus{
+	box-shadow: 0px 0px 15px rgba(81, 165, 229, .5);
+}
+.tweets{
+	background-color: white;
+}
+.tweets a{
+	padding: 5px 0px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #51a5e5;
+}
+.tweets ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: inside none;
+}
+.tweets ul li{
+	display: block;
+	margin: 15px 0px;
+	min-height: 4rem;
+	position: relative;
+}
+.tweets ul li img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 4rem;
+}
+.tweets ul li .time{
+	font-family: "Aller Light";
+	color: #c2c2c2;
+	font-size: .72rem;
+}
+.tweets-item, #who-follow ul li{
+	margin-left: 5rem;
+	color: #c2c2c2;
+	font-size: .8rem;
+}
+.tweets-item .name, #who-follow ul li .name{
+	text-align: left;
+	color: #919aa3;
+	font-weight: bold;
+}
+.tweets-item a{
+	display: inline;
+}
+#who-follow{
+	border-bottom: solid 1px rgba(0,0,0,.1);
+	padding-bottom: 10px;
+}
+#who-follow-header, #trending-header, #latest-activity-header{
+	color: #c2c2c2;
+	padding: 15px 20px;
+	padding-top: 25px;
+}
+#who-follow-header h1, #trending-header h1, .modal h4, #latest-activity-header h1{
+	font-size: 1rem;
+	display: inline;
+	font-family: "Aller Light";
+	color: #c2c2c2;
+}
+#who-follow ul{
+	list-style: inside none;
+	padding-left: 0px;
+}
+#who-follow ul li{
+	display: block;
+	margin: 15px 0px;
+	min-height: 3rem;
+	position: relative;
+}
+#who-follow ul li img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	max-width: 3rem;
+	border-radius: 1.5rem;
+	border: 2px rgba(81, 165, 229, .5) solid;
+}
+#who-follow ul li img:hover{
+	border: none;
+}
+#who-follow .people{
+	margin-left: 4rem;
+	padding: 5px 0px;
+}
+#who-follow .people p{
+	font-size: .75rem;
+}
+#who-follow a{
+	font-size: .75rem;
+	color: rgb(81, 165, 229);
+}
+#trending{
+	padding-bottom: 25px;
+}
+#trending ul{
+	list-style: inside none;
+	padding-left: 0px;
+}
+#trending ul li{
+	padding: 10px 10px;
+	padding-bottom: 0px;
+	color: #c2c2c2;
+}
+.modal{
+	font-family: "Aller";
+	color: #c2c2c2;
+	font-size: .75rem;
+}
+.card{
+	border-radius: 10px;
+	border-color: rgba(0,0,0,.25);
+	box-shadow: 0px 0px 5px white;
+	border-right-style: solid;
+	max-width: 32rem;
+}
+.card-block > div{
+	position: relative;
+	padding: 15px 0px;
+}
+.card-profile{
+	border-bottom: solid 1px rgba(0,0,0,.25);
+}
+.card-profile img{
+	position: absolute;
+	top: 15px;
+	left: 0;
+	max-width: 3rem;
+	border-radius: 50px;
+}
+.card-profile-info{
+	min-height: 3rem;
+	margin-left: 4rem;
+}
+.card-profile-info a{
+	display: block;
+}
+.card span{
+	font-family: "Aller Light";
+	font-size: .75rem;
+}
+.card-block > img{
+	position: relative;
+	right: 1.25rem;
+	max-width: 14.25rem;
+	height: auto;
+}
+.post{
+	font-size: .75rem;
+}
+.post a{
+	color: rgb(81, 165, 229);
+}
+#profile-pic{
+	height: 20rem;
+	overflow: hidden;
+	padding-left: 0px;
+	padding-bottom: 0px;
+}
+#profile-pic img{
+	float: left;
+	max-width: 100%;
+}
+#profile{
+	padding: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: solid 1px rgba(0,0,0,.1);
+}
+.profile-info figure{
+	width: 100%;
+}
+.profile-info img{
+	display: block;
+	margin-left: -3rem;
+	border-radius: 3rem;
+	max-width: 6rem;
+	margin: 0 auto;
+}
+.profile-name a, .user-info h1, .user-info span{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.profile-name a span, .user-info span{
+	font-size: .75rem;
+	color: #c2c2c2;
+}
+.profile-info a.btn-secondary{
+	width: 2rem;
+	display: block;
+	height: 2rem;
+	border-radius: 1rem;
+	text-align: center;
+	line-height: 2rem;
+	position: relative;
+	bottom: 5rem;
+	font-size: 1rem;
+	color: #c2c2c2;
+	background-color: transparent;
+	border: solid 1px #c2c2c2;
+}
+.user-info{
+	margin-bottom: 1rem;
+	border-bottom: solid 1px rgba(0,0,0,.1);
+	padding: 0px;
+}
+.user-info div{
+	padding: 1rem 0;
+	border-right: solid 1px rgba(0,0,0,.1);
+}
+.user-info div:last-child{
+	border-right: none;
+}
+.user-info h1{
+	font-size: 1rem;
+}
+.timeline{
+	font-family: "Aller Light";
+	list-style: inside none;
+	margin: 1rem auto;
+	margin-left: .5rem;
+	padding: 0;
+	border-left: solid #c2c2c2 3px;
+	color: #c2c2c2;
+}
+.timeline li{
+	padding-left: 2.5rem;
+	position: relative;
+}
+.timeline li i{
+	position: absolute;
+	top: 0;
+	left: -.6125rem;
+	width: 1rem;
+	height: 1rem;
+	border: solid #c2c2c2 3px;
+	border-radius: 50%;
+	background-color: #f5f6f8;
+}
+.timeline li .time-stamp{
+	display: block;
+	margin-bottom: .5rem;
+}
+.timeline p{
+	font-size: .75rem;
+}
+.timeline .item{
+	color: #51a5e5;
+}
+.timeline .user{
+	font-family: "Aller Bold"
+}
+.graph h1{
+	display: inline-block;
+	font-family: "Aller Bold";
+	font-size: 1rem;
+	margin-bottom: 1.25rem;
+}
+.graph .pull-right a{
+	display: inline-block;
+	padding: 0 .5rem;
+}
+.graph .pull-right a.active{
+	color: #51a5e5;
+}
+.user-stat{
+	overflow: hidden;
+}
+.user-stat div{
+	border-right: 1px solid rgba(0,0,0, .1);
+	background-color: white;
+	padding: 1rem;
+}
+.user-stat div:last-child{
+	border-right: none;
+}
+.user-stat h1{
+	font-family: "Aller Bold";
+	font-size: 1rem;
+	text-align: center;
+	vertical-align: middle;
+}
+.user-stat span{
+	font-family: "Aller Light";
+	display: block;
+	font-size: .75rem;
+	text-align: center;
+	vertical-align: middle;
+}
+.morris-hover {
+  position: absolute;
+  z-index: 1000;
+}
+.morris-hover.morris-default-style {
+  padding: 6px;
+  color: #666;
+  background: rgba(243, 242, 243, 0.8);
+  border: solid 2px rgba(195, 194, 196, 0.8);
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+.morris-hover.morris-default-style .morris-hover-row-label {
+  font-weight: bold;
+  margin: 0.25em 0;
+}
+.morris-hover.morris-default-style .morris-hover-point {
+  white-space: nowrap;
+  margin: 0.1em 0;
+}
+@media(min-width: 1000px){
+	.second-nav{
+		margin-top: -10px;
+	}
+	.second-nav ul li{
+		float: left;
+	}
+}
+@media(max-width: 76rem){
+	.card-columns{
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+}
+@media(max-width: 49rem){
+	.left-nav img{
+		max-width: 100%;
+	}
+	.profile-pic a{
+		display: none;
+	}
+	.fa{
+		font-size: 1.5rem;
+	}
+}
+@media(max-width: 32rem){
+	#userNav{
+		list-style: inside none;
+		padding-left: 0px;
+	}
+	#userNav li{
+		margin-left: 0px;
+		display: block;
+		width: 100%;
+		padding: 15px 0px;
+		padding-left: 15px;
+		font-size: 1rem;
+	}
+	#userNav li span{
+		display: inline-block;
+		margin-left: 15px;
+	}
+	#main .wrapper{
+		border-right-style: none;
+	}
+	.user-info div:first-child{
+		border-bottom: solid 1px rgba(0,0,0,.1);
+		border-right: none;
+	}
+}
